@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+  <title>Farenhait Celsius App</title>
+</head>
+<body>
+  <div class="container" ng-controller="AppCtrl">
+    <h1>Fahrenheit and Celsius App</h1>
+
+      <th>&nbsp;</th>
+     <h2> Choose <br> Fahrenheit or Celsius</h2>
+
+
+    <table class="table">
+
+      <thead>
+        <tr>
+          <th>Enter for Celsius</th>
+          <th>Enter for Celsius to Fahrenheit</th>
+          <th>Action</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!--End Choose
+        <h4>GET Response in: {{current_lumens}}</h4>
+        <select class="custom-select" ng-change="change()" ng-model="contact" ng-options="o as o for o in lumen_options"></select>
+            -->
+          <tr>
+          <td><input type="number"  class="form-control" ng-model="contact.celsius">
+          <td><input type="number"  class="form-control" ng-model="contact.fahrenheit"></td>
+          <td><button class="btn btn-primary"  ng-click="addContact()">Request</button></td>
+          <td><button class="btn btn-info" ng-click="deselect()">Clear</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br />
+
+    <table class="table">
+            <td>
+            <tr><H4> Your Celsius: {{contact.celsius}}</h4></tr>
+            <tr><H4> Your Fahrenheit: {{contact.fahrenheit + 32}}</h4></tr>
+          </td>
+          </table>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+</body>
+</html>

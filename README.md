@@ -1,13 +1,3 @@
-# MEAN Stack RESTful API Celsius
-
-
-<ul>
-<li>MongoDB</li>
-<li>Express</li>
-<li>AngularJS</li>
-<li>NodeJS</li>
-</ul>
-
 
 <h3>Instructions</h3>
 
